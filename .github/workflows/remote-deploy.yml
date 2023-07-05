@@ -24,7 +24,7 @@ jobs:
           FOLDER: ./
           SERVER_IP: ${{ secrets.SSH_HOST }}
           USERNAME: ${{ secrets.SSH_USERNAME }}
-          SERVER_DESTINATION: ./app
+          SERVER_DESTINATION: ${{ secrets.SERVER_DESTINATION }}
 
       # - name: Restart Chatbot
       #   uses: appleboy/ssh-action@master
