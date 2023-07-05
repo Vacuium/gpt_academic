@@ -20,8 +20,8 @@ jobs:
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
           # ARGS: -avz --exclude='config.ini'
-          SERVER_PORT: '443'
-          FOLDER: ./
+          SERVER_PORT: ${{ secrets.SERVER_PORT }}
+          FOLDER: "./"
           SERVER_IP: ${{ secrets.SSH_HOST }}
           USERNAME: ${{ secrets.SSH_USERNAME }}
           SERVER_DESTINATION: ${{ secrets.SERVER_DESTINATION }}
