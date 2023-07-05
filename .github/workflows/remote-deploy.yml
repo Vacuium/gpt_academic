@@ -15,9 +15,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Python Safety Check
-        uses: aufdenpunkt/python-safety-check@v1.0.5
-
       - name: Deploy to Server
         uses: AEnterprise/rsync-deploy@v1.0.2
         env:
